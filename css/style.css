@@ -19,17 +19,22 @@ header {
     color:black
 }
 
+h2 {
+    text-transform: capitalize;
+}
+
 
 
 .limited a:link,
 .limited a:visited {
   display: inline-block;
-  padding: .8em 1em;
+  padding: .4em 1em;
   background-color: #000;
   color: #fff;
   text-decoration: none;
   border: 2px solid #000;
   border-radius: 4px;
+  font-weight: bold;
 
   margin-top: auto;
 }
@@ -61,17 +66,17 @@ header {
     color: #000;
 } */
 
-/* -------------------
+
 #sweethearts-affair .images {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
 
     margin-bottom: 50px;
 
     grid-template-areas: 
-    "img1 img2"
-    "img3 img4"
+    "img1 img1 img1"
+    "img2 img3 img4"
 
     
 }
@@ -91,7 +96,7 @@ header {
 #sweethearts-affair .images img:nth-child(1){
   grid-area: img4;
 }
------------------- */
+
 
 
 
