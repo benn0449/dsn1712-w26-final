@@ -4,7 +4,7 @@
 
 body {
     background-color: #fff;
-    font-family: POPPINS;
+    font-family: 'poppins', sans-serif;
     line-height: 1.4;
     margin: 0;
 }
@@ -20,54 +20,109 @@ header {
 }
 
 h2 {
-    text-transform: capitalize;
+    text-align: center;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+.nav a:link,
+.nav a:visited {
+    /* font-size: 14px; */
+    text-transform: uppercase;
+    color: #000;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    text-decoration: none;
+    list-style-type: none;
+    gap: 10px;
 }
 
 
+#header-links a:hover,
+#header-links a:focus {
+    text-decoration: none;
+    color: #222;
+}
+
+/* .wrapper {
+    max-width: 940px; 
+    margin: 0 auto;
+    align-items: center; 
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+
+
+#sweethearts-affair {
+    padding: 20px 20px 20px;
+}
 
 .limited a:link,
 .limited a:visited {
-  display: inline-block;
-  padding: .4em 1em;
-  background-color: #000;
-  color: #fff;
-  text-decoration: none;
-  border: 2px solid #000;
-  border-radius: 4px;
-  font-weight: bold;
+    display: inline-block;
+    padding: .4em 1em;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #000;
+    border-radius: 4px;
+    font-weight: bold;
 
-  margin-top: auto;
+    margin-top: auto;
 }
 
 .limited a:hover,
 .limited a:focus {
-  background-color: #fff;
-  color: #222;
+    background-color: #fff;
+    color: #222;
 }
 
 
-/* .skills a:link,
-.skills a:visited {
-    display: inline-block;
-    padding: .8em 1em;
+#behind-the-dough {
+    background-color: #f8fafc;
+    padding: 20px 20px 20px;
+    margin-top: 30px;
+}
+
+#people {
     background-color: #000;
-    border: 2px solid black;
     color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
+    padding: 20px 20px 20px;
 
-    margin-top: auto;
+}
 
-} 
+.flavours {
+    /* list-style:  */
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 2fr;
+}
 
+.flavours img {
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
 
-.skills a:hover {
-    background-color: #fff;
-    color: #000;
-} */
+.flavours li{
+    background-color: #f8fafc;
+    border-radius: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
 
+#try-with {
 
-#sweethearts-affair .images {
+}
+
+/* #sweethearts-affair .images {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
@@ -95,7 +150,7 @@ h2 {
 
 #sweethearts-affair .images img:nth-child(1){
   grid-area: img4;
-}
+} */
 
 
 
@@ -151,7 +206,7 @@ footer {
     /* Create a separate folder for your CSS file and place style.css within it. DONE
     Mobile-first approach in the styling (default styling is suitable for mobile and properties are adjusted for tablet and desktop when media queries are introduced).
     The maximum width of the container is 1200px
-    Use the 'Poppins' Google font for the webpage
+    Use the 'Poppins' Google font for the webpage DONE
     Colours values used in the layout #fff, #222, #000,  and #f8fafc.
     Font sizes for heading levels:
         h1 = 2.027rem
