@@ -1,10 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: POPPINS;
+    line-height: 1.4;
+    margin: 0;
+}
+
+header {
+    color:black
+}
+
+/* .logo {
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-start;
+    justify-content: space-between;
+    gap: 20px; 
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-end;
+    justify-content: space-between;
+    text-decoration: none;
+    gap: 20px; 
+}
+
+ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+
+nav a:link,
+nav a:visited {
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #222;
+} */
 
 
 
 
 
-
-    /* Create a separate folder for your CSS file and place style.css within it.
+    /* Create a separate folder for your CSS file and place style.css within it. DONE
     Mobile-first approach in the styling (default styling is suitable for mobile and properties are adjusted for tablet and desktop when media queries are introduced).
     The maximum width of the container is 1200px
     Use the 'Poppins' Google font for the webpage
