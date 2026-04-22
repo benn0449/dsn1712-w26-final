@@ -1,0 +1,23 @@
+
+
+
+
+
+
+    /* Create a separate folder for your CSS file and place style.css within it.
+    Mobile-first approach in the styling (default styling is suitable for mobile and properties are adjusted for tablet and desktop when media queries are introduced).
+    The maximum width of the container is 1200px
+    Use the 'Poppins' Google font for the webpage
+    Colours values used in the layout #fff, #222, #000,  and #f8fafc.
+    Font sizes for heading levels:
+        h1 = 2.027rem
+        h2 = 1.802rem
+        h3 = 1.266rem
+    Use of CSS Grid properties for a minimum of one element
+    Use of CSS Flexbox properties for a minimum of one element 
+    No inline styles are used in the CSS *see note below
+    Add a min-width media query for the screen size of 768px and above and adjust page to match the screenshot labeled 'product-page-768'
+    Add a min-width media query for the screen size of 960px and above and adjust page to match the screenshot labeled 'product-page-960'
+    CSS is properly formatted
+    Overall design executed well and closely matches the provided mockup
+    CSS code is validated using https://jigsaw.w3.org/css-validator/#validate_by_input */
