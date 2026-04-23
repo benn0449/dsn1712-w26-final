@@ -3,10 +3,15 @@
 }
 
 .grid {
-  display: grid;
-  margin-top: 1em;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+    display: grid;
+    margin-top: 1em;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
 }
 
 .container {
@@ -42,15 +47,13 @@ h2 {
 
 h3 {
     text-transform: uppercase;
-    font-size: 1.266remrem;
+    font-size: 1.266rem;
 }
 
-/* ----------------------------------------------------------------------------- */
 
 .wrapper {
     display: flex;
     align-items: center;
-    /* flex-direction: row; */
     justify-content: space-between;
     padding: 20px;
 }
@@ -63,24 +66,6 @@ h3 {
 .wrapper .nav {
     max-width: 33%;
 }
-/* #header-links img {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: flex-start;
-    
-    max-width: 25%;
-    padding: 20px;
-}
-
-.nav {
-    display: flex;
-    flex-wrap: nowrap;
-
-    justify-content: flex-end;
-    padding: 20px;
-    gap: 50px;
-} */
 
 
 .nav a:link,
@@ -100,22 +85,7 @@ h3 {
     color: #222;
 }
 
-/* .wrapper {
-    max-width: 940px; 
-    margin: 0 auto;
-    align-items: center; 
-}
 
-.header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-} */
-
-
-#sweethearts-affair {
-    padding: 20px 20px 20px;
-}
 
 .limited a:link,
 .limited a:visited {
@@ -137,11 +107,49 @@ h3 {
     color: #222;
 }
 
+#sweethearts-affair {
+    padding: 20px 20px 20px;
+    margin: 0;
+}
+
+
+#sweethearts-affair .grid {
+    display: grid;
+    margin-top: 1em;
+    grid-template-columns:1fr 1fr 1fr;
+    margin: auto;
+
+    grid-template-areas: 
+    "img1 img1 img1"
+    "img1 img1 img1"
+    "img1 img1 img1"
+    "img2 img3 img4"
+
+    
+}
+
+#sweethearts-affair .grid  img:nth-child(1){
+  grid-area: img1;
+}
+
+#sweethearts-affair .grid  img:nth-child(2){
+  grid-area: img2;
+}
+
+#sweethearts-affair .grid  img:nth-child(3){
+  grid-area: img3;
+}
+
+#sweethearts-affair .grid  img:nth-child(4){
+  grid-area: img4;
+}
+
+
 
 #behind-the-dough {
     background-color: #f8fafc;
     padding: 20px 20px 20px;
-    margin-top: 30px;
+    margin-top: auto;
 }
 
 #people {
@@ -152,15 +160,17 @@ h3 {
 }
 
 #try-with {
-    margin: 20px;
+    margin: 0;
 }
 
 .flavours {
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 1rem;
 }
+
+
 
 .flavours img {
     border-radius: 0;
@@ -168,129 +178,43 @@ h3 {
     border-top-right-radius: 20px;
 }
 
-.flavours li{
+.flavours .grid li{
     background-color: #f8fafc;
     border-radius: 20px;
+    
     text-align: center;
     padding-bottom: 20px;
     margin-bottom: 20px;
-    width: 100%;
-}
+} 
 
-
-
-
-/* #sweethearts-affair .-- {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
-
-    margin-bottom: 50px;
-
-    grid-template-areas: 
-    "img1 img1 img1"
-    "img2 img3 img4"
-
-    
-}
-
-#sweethearts-affair .-- img:nth-child(1){
-  grid-area: img1;
-}
-
-#sweethearts-affair .-- img:nth-child(1){
-  grid-area: img2;
-}
-
-#sweethearts-affair .-- img:nth-child(1){
-  grid-area: img3;
-}
-
-#sweethearts-affair .-- img:nth-child(1){
-  grid-area: img4;
-} */
-
-
-
-
-
-/* .logo {
-    display: flex;
-    flex-direction: row; 
-    justify-content: flex-start;
-    justify-content: space-between;
-    gap: 20px; 
-
-}
-
-nav ul {
-    display: flex;
-    flex-direction: row; 
-    justify-content: flex-end;
-    justify-content: space-between;
-    text-decoration: none;
-    gap: 20px; 
-}
-
-ul li {
-    text-decoration: none;
-    list-style: none;
-    padding: 0;
-}
-
-nav a:link,
-nav a:visited {
-    color: #fff;
-    list-style: none;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: none;
-    color: #222;
-} */
-
-
-
-
-
-
-    /* Create a separate folder for your CSS file and place style.css within it. DONE
-    Mobile-first approach in the styling (default styling is suitable for mobile and properties are adjusted for tablet and desktop when media queries are introduced).
-    The maximum width of the container is 1200px DONE
-    Use the 'Poppins' Google font for the webpage DONE
-    Colours values used in the layout #fff, #222, #000,  and #f8fafc.
-    Font sizes for heading levels: DONE
-        h1 = 2.027rem DONE
-        h2 = 1.802rem DONE
-        h3 = 1.266rem DONE
-    Use of CSS Grid properties for a minimum of one element -> sweethearts affair
-    Use of CSS Flexbox properties for a minimum of one element -> more flavours
-    No inline styles are used in the CSS *see note below
-    Add a min-width media query for the screen size of 768px and above and adjust page to match the screenshot labeled 'product-page-768' 
-    Add a min-width media query for the screen size of 960px and above and adjust page to match the screenshot labeled 'product-page-960'
-    
-    CSS is properly formatted
-    Overall design executed well and closely matches the provided mockup
-    CSS code is validated using https://jigsaw.w3.org/css-validator/#validate_by_input */
 
 @media (min-width: 768px) {
-  .grid { 
-    background-color: aquamarine;
-    margin-top: 1em;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    
+    .grid { 
+        background-color: aquamarine;
+        margin-top: 1em;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
   }
 }  
 
+
 @media (min-width: 960px) {
-  .grid { 
-    background-color: darkolivegreen;
-    margin-top: 1em;
-    grid-template-columns:1fr 1fr 1fr 1fr;
-    gap: 1rem;
-  }
+    #behind-the-dough .the-dough { 
+        background-color: darkolivegreen;
+        margin-top: 1em;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .grid { 
+        background-color: darkolivegreen;
+        margin-top: 1em;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        gap: 1rem;
+    }
 }  
+
 
 footer {
     background-color: #000;
